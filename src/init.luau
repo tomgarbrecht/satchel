@@ -75,10 +75,10 @@ local ARROW_IMAGE_OPEN: string = "rbxasset://textures/ui/TopBar/inventoryOn.png"
 local ARROW_IMAGE_CLOSE: string = "rbxasset://textures/ui/TopBar/inventoryOff.png"
 -- local ARROW_HOTKEY: { Enum.KeyCode } = { Enum.KeyCode.Backquote, Enum.KeyCode.DPadUp } --TODO: Hookup '~' too?
 
--- Hotbar slots
+--  slots
 local HOTBAR_SLOTS_FULL: number = 10 -- 10 is the max
 local HOTBAR_SLOTS_VR: number = 6
-local HOTBAR_SLOTS_MINI: number = 6 -- Mobile gets 6 slots instead of default 3 it had before
+local HOTBAR_SLOTS_MINI: number = targetScript:GetAttribute("HotbarSlotsMini") or 6 -- Mobile gets 6 slots instead of default 3 it had before
 local HOTBAR_SLOTS_WIDTH_CUTOFF: number = 1024 -- Anything smaller is MINI
 
 local INVENTORY_ROWS_FULL: number = 4
